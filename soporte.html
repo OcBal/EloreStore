@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élore | Soporte, Devoluciones y Atención al Cliente</title>
+    <meta name="description" content="Centro de ayuda, preguntas frecuentes, seguimiento de pedidos y política de devoluciones de Élore.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="tienda.html" class="nav-link">Tienda</a></li>
+                    <li><a href="index.html#nosotros" class="nav-link">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="brand-logo">
+                <svg class="logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/>
+                </svg>
+                <span class="logo-text">Élore</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="soporte.html" class="action-link">Rastreo de pedido</a>
+                <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section-padding support-container">
+        <header class="support-header text-center">
+            <span class="support-tag">ESTAMOS AQUÍ PARA TI</span>
+            <h1 class="page-title">Soporte y atención al cliente</h1>
+        </header>
+
+        <nav class="support-tabs-nav">
+            <button class="tab-btn active" data-tab="faq">Preguntas frecuentes</button>
+            <button class="tab-btn" data-tab="contacto">Contáctanos</button>
+            <button class="tab-btn" data-tab="reclamaciones">Libro de reclamaciones</button>
+        </nav>
+
+        <section id="tab-faq" class="tab-content active">
+            <div class="accordion">
+                <div class="accordion-item active">
+                    <button class="accordion-header">
+                        <span>¿Cuánto tiempo demora el envío?</span>
+                        <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Los envíos a Lima Metropolitana demoran de 1 a 3 días hábiles. Para provincias, de 3 a 7 días hábiles. Envíos internacionales de 7 a 15 días hábiles.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="item-devoluciones">
+                    <button class="accordion-header">
+                        <span>¿Cuál es la política de devoluciones?</span>
+                        <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Cuentas con hasta 30 días calendario tras recibir tu pedido para solicitar cambios o devoluciones sin costo adicional. La prenda debe estar sin usar, con sus etiquetas originales y empaque intacto.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿Cómo sé qué talla elegir?</span>
+                        <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Puedes consultar nuestra guía de medidas disponible en la ficha de cada producto o escribirnos por WhatsApp para una asesoría personalizada de calce.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿Realizan envíos internacionales?</span>
+                        <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Sí, realizamos envíos a todo el mundo a través de DHL Express. Los impuestos o aranceles de importación corren por cuenta del cliente según el país de destino.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿Puedo cambiar o cancelar mi pedido?</span>
+                        <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Puedes modificar o cancelar tu pedido dentro de las primeras 2 horas de haber realizado la compra contactándonos inmediatamente a través de nuestro soporte técnico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-contacto" class="tab-content">
+            <div class="support-card text-center">
+                <h3>Atención al Cliente Directa</h3>
+                <p>Escríbenos a <strong>contacto@elore.com</strong> o comunícate vía WhatsApp al <strong>+51 987 654 321</strong>.</p>
+                <p>Horario de atención: Lunes a Viernes de 9:00 am a 6:00 pm.</p>
+            </div>
+        </section>
+
+        <section id="tab-reclamaciones" class="tab-content">
+            <div class="support-card text-center">
+                <h3>Libro de Reclamaciones Virtual</h3>
+                <p>Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, ponemos a tu disposición nuestro libro de reclamaciones virtual.</p>
+                <button class="btn btn-primary" style="margin-top:15px;">Registrar Reclamo o Queja</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">Élore</h3>
+                <p>Moda consciente y atemporal para quienes aprecian lo bien hecho.</p>
+            </div>
+            <div class="footer-col">
+                <h4>TIENDA</h4>
+                <ul>
+                    <li><a href="tienda.html">Novedades</a></li>
+                    <li><a href="tienda.html?cat=calzado">Calzado</a></li>
+                    <li><a href="tienda.html?cat=ropa">Ropa</a></li>
+                    <li><a href="tienda.html?cat=accesorios">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="soporte.html">Rastreo de pedido</a></li>
+                    <li><a href="soporte.html?topic=devoluciones">Devoluciones</a></li>
+                    <li><a href="soporte.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EMPRESA</h4>
+                <ul>
+                    <li><a href="index.html#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="soporte.html?tab=contacto">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Élore. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Producto añadido al carrito</div>
+    <script src="script.js" defer></script>
+</body>
+</html>

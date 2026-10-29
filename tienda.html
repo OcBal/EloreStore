@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élore | Comprar ropa para mujer - Tienda ropa Lima</title>
+    <meta name="description" content="Explora nuestro catálogo para comprar ropa para mujer, arma tu outfit ideal y encuentra tu tienda ropa Lima favorita en Élore.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="tienda.html" class="nav-link active">Tienda</a></li>
+                    <li><a href="index.html#nosotros" class="nav-link">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="brand-logo">
+                <svg class="logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/>
+                </svg>
+                <span class="logo-text">Élore</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="soporte.html" class="action-link">Rastreo de pedido</a>
+                <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <header class="shop-header">
+            <span class="collection-tag">COLECCIÓN 2026</span>
+            <h1 class="page-title">Tienda</h1>
+        </header>
+
+        <div class="shop-controls">
+            <nav class="category-filters">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="calzado">Calzado</button>
+                <button class="filter-btn" data-category="ropa">Ropa</button>
+                <button class="filter-btn" data-category="accesorios">Accesorios</button>
+            </nav>
+
+            <div class="sort-wrapper">
+                <select id="sortSelect" class="sort-select">
+                    <option value="novedades">Novedades</option>
+                    <option value="precio-asc">Precio: Menor a Mayor</option>
+                    <option value="precio-desc">Precio: Mayor a Menor</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="grid-products" id="productGrid">
+            <article class="product-card" data-category="calzado">
+                <div class="product-image-wrapper">
+                    <span class="badge">NUEVO</span>
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=600&q=80" alt="Botín Chelsea Carmel" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Botín Chelsea Carmel">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Calzado</span>
+                    <h3 class="product-title"><a href="producto.html">Botín Chelsea Carmel</a></h3>
+                    <p class="product-price">S/ 289</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="calzado">
+                <div class="product-image-wrapper">
+                    <span class="badge">NUEVO</span>
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=600&q=80" alt="Sneaker Blanco Minimal" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Sneaker Blanco Minimal">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Calzado</span>
+                    <h3 class="product-title"><a href="producto.html">Sneaker Blanco Minimal</a></h3>
+                    <p class="product-price">S/ 199</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="ropa">
+                <div class="product-image-wrapper">
+                    <span class="badge">NUEVO</span>
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=600&q=80" alt="Blazer Lino Natural" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Blazer Lino Natural">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Ropa</span>
+                    <h3 class="product-title"><a href="producto.html">Blazer Lino Natural</a></h3>
+                    <p class="product-price">S/ 345</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="ropa">
+                <div class="product-image-wrapper">
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600&q=80" alt="Pantalón Wide Leg Beige" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Pantalón Wide Leg Beige">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Ropa</span>
+                    <h3 class="product-title"><a href="producto.html">Pantalón Wide Leg Beige</a></h3>
+                    <p class="product-price">S/ 215</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="calzado">
+                <div class="product-image-wrapper">
+                    <span class="badge">NUEVO</span>
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1562273138-f46be4ebdf33?q=80&w=600&q=80" alt="Sandalia Trenzada Nude" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Sandalia Trenzada Nude">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Calzado</span>
+                    <h3 class="product-title"><a href="producto.html">Sandalia Trenzada Nude</a></h3>
+                    <p class="product-price">S/ 175</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="ropa">
+                <div class="product-image-wrapper">
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&q=80" alt="Camiseta Algodón Pima" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Camiseta Algodón Pima">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Ropa</span>
+                    <h3 class="product-title"><a href="producto.html">Camiseta Algodón Pima</a></h3>
+                    <p class="product-price">S/ 89</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="calzado">
+                <div class="product-image-wrapper">
+                    <span class="badge">NUEVO</span>
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=600&q=80" alt="Mocasín Pelo Beige" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Mocasín Pelo Beige">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Calzado</span>
+                    <h3 class="product-title"><a href="producto.html">Mocasín Pelo Beige</a></h3>
+                    <p class="product-price">S/ 249</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="ropa">
+                <div class="product-image-wrapper">
+                    <span class="badge">NUEVO</span>
+                    <a href="producto.html">
+                        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=600&q=80" alt="Vestido Midi Crochet" loading="lazy">
+                    </a>
+                    <button class="add-to-cart-btn" data-product="Vestido Midi Crochet">Añadir al carrito</button>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Ropa</span>
+                    <h3 class="product-title"><a href="producto.html">Vestido Midi Crochet</a></h3>
+                    <p class="product-price">S/ 390</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">Élore</h3>
+                <p>Moda consciente y atemporal para quienes aprecian lo bien hecho.</p>
+            </div>
+            <div class="footer-col">
+                <h4>TIENDA</h4>
+                <ul>
+                    <li><a href="tienda.html">Novedades</a></li>
+                    <li><a href="tienda.html?cat=calzado">Calzado</a></li>
+                    <li><a href="tienda.html?cat=ropa">Ropa</a></li>
+                    <li><a href="tienda.html?cat=accesorios">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="soporte.html">Rastreo de pedido</a></li>
+                    <li><a href="soporte.html?topic=devoluciones">Devoluciones</a></li>
+                    <li><a href="soporte.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EMPRESA</h4>
+                <ul>
+                    <li><a href="index.html#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="soporte.html?tab=contacto">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Élore. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Producto añadido al carrito</div>
+    <script src="script.js" defer></script>
+</body>
+</html>

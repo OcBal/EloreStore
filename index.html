@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élore | Tienda de ropa Perú - Moda y Ropa de Mujer</title>
+    <meta name="description" content="Descubre la mejor tienda de ropa Perú en Élore. Encuentra ropa de mujer atemporal, elegante y de alta calidad. ¡Compra online hoy!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="tienda.html" class="nav-link">Tienda</a></li>
+                    <li><a href="#nosotros" class="nav-link">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="brand-logo">
+                <svg class="logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z"/>
+                </svg>
+                <span class="logo-text">Élore</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="soporte.html" class="action-link">Rastreo de pedido</a>
+                <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider" id="inicio">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600');">
+                <div class="hero-content">
+                    <span class="tagline">COLECCIÓN 2026</span>
+                    <h1 class="hero-title">Nueva Colección Otoño</h1>
+                    <p class="hero-subtitle">Piezas atemporales para combinar la moda</p>
+                    <a href="tienda.html" class="btn btn-primary">Descubrir</a>
+                </div>
+            </div>
+
+            <button class="slider-arrow prev-arrow" id="prevSlide" aria-label="Anterior slide">&#10094;</button>
+            <button class="slider-arrow next-arrow" id="nextSlide" aria-label="Siguiente slide">&#10095;</button>
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="categories section-padding">
+            <div class="container grid-categories">
+                <a href="tienda.html?cat=calzado" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=600&q=80" alt="Calzado de moda" loading="lazy">
+                    <div class="category-overlay">
+                        <h3>Calzado</h3>
+                    </div>
+                </a>
+
+                <a href="tienda.html?cat=ropa" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=600&q=80" alt="Ropa de mujer" loading="lazy">
+                    <div class="category-overlay">
+                        <h3>Ropa</h3>
+                    </div>
+                </a>
+
+                <a href="tienda.html?cat=accesorios" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600&q=80" alt="Accesorios" loading="lazy">
+                    <div class="category-overlay">
+                        <h3>Accesorios</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="products section-padding" id="novedades">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Novedades</h2>
+                    <a href="tienda.html" class="see-all-link">Ver todo &rarr;</a>
+                </div>
+
+                <div class="grid-products">
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge">Nuevo</span>
+                            <a href="producto.html">
+                                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=500&q=80" alt="Botín Chelsea Carmel" loading="lazy">
+                            </a>
+                            <button class="add-to-cart-btn" data-product="Botín Chelsea Carmel">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Calzado</span>
+                            <h3 class="product-title"><a href="producto.html">Botín Chelsea Carmel</a></h3>
+                            <p class="product-price">S/ 289</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge">Nuevo</span>
+                            <a href="producto.html">
+                                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=500&q=80" alt="Sneaker Blanco Minimal" loading="lazy">
+                            </a>
+                            <button class="add-to-cart-btn" data-product="Sneaker Blanco Minimal">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Calzado</span>
+                            <h3 class="product-title"><a href="producto.html">Sneaker Blanco Minimal</a></h3>
+                            <p class="product-price">S/ 199</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <span class="badge badge-accent">100% Lino Natural</span>
+                            <a href="producto.html">
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=500&q=80" alt="Blazer Lino Natural" loading="lazy">
+                            </a>
+                            <button class="add-to-cart-btn" data-product="Blazer Lino Natural">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Ropa</span>
+                            <h3 class="product-title"><a href="producto.html">Blazer Lino Natural</a></h3>
+                            <p class="product-price">S/ 345</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <a href="producto.html">
+                                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=500&q=80" alt="Pantalón Wide Leg Beige" loading="lazy">
+                            </a>
+                            <button class="add-to-cart-btn" data-product="Pantalón Wide Leg Beige">Añadir al carrito</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Ropa</span>
+                            <h3 class="product-title"><a href="producto.html">Pantalón Wide Leg Beige</a></h3>
+                            <p class="product-price">S/ 215</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter section-padding">
+            <div class="container newsletter-box">
+                <span class="newsletter-tag">NEWSLETTER</span>
+                <h2>Sé la primera en saber</h2>
+                <p>Recibe las novedades de colección, invitaciones a eventos privados y acceso anticipado a las ventas.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Tu correo electrónico" required id="newsletterEmail">
+                    <button type="submit" class="btn btn-secondary">Suscribirme</button>
+                </form>
+                <div id="newsletterFeedback" class="feedback-msg"></div>
+            </div>
+        </section>
+
+        <section class="reviews section-padding" id="nosotros">
+            <div class="container">
+                <h2 class="text-center">Reseñas y Testimonios</h2>
+
+                <div class="grid-reviews">
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"La calidad del Blazer de Lino superó mis expectativas. El tejido es suave, cae perfecto y lo uso tanto para el trabajo como para salidas. ¡Definitivamente volveré!"</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&q=80" alt="Valentina R." loading="lazy">
+                            <div>
+                                <h4>Valentina R.</h4>
+                                <small>Lima</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Me encantaron las botas Chelsea. El envío llegó rapidísimo y el empaque fue un detalle hermoso. La atención al cliente es excelente, muy atentos y cordiales."</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=150&q=80" alt="Sofía M." loading="lazy">
+                            <div>
+                                <h4>Sofía M.</h4>
+                                <small>Arequipa</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Compré el vestido Midi Crochet y es una obra de arte. Se nota el trabajo artesanal en cada punto. Recibí cientos de cumplidos el día que lo estrené."</p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=150&q=80" alt="Camila F." loading="lazy">
+                            <div>
+                                <h4>Camila F.</h4>
+                                <small>Cusco</small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">Élore</h3>
+                <p>Moda consciente y atemporal para quienes aprecian lo bien hecho.</p>
+            </div>
+            <div class="footer-col">
+                <h4>TIENDA</h4>
+                <ul>
+                    <li><a href="tienda.html">Novedades</a></li>
+                    <li><a href="tienda.html?cat=calzado">Calzado</a></li>
+                    <li><a href="tienda.html?cat=ropa">Ropa</a></li>
+                    <li><a href="tienda.html?cat=accesorios">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="soporte.html">Rastreo de pedido</a></li>
+                    <li><a href="soporte.html?topic=devoluciones">Devoluciones</a></li>
+                    <li><a href="soporte.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EMPRESA</h4>
+                <ul>
+                    <li><a href="index.html#nosotros">Sobre nosotros</a></li>
+                    <li><a href="soporte.html?tab=contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Élore. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Producto añadido al carrito</div>
+    <script src="script.js" defer></script>
+</body>
+</html>
