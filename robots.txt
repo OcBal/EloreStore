@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ubicación del Sitemap
+Sitemap: https://ocbal.github.io/EloreStore/sitemap.xml
